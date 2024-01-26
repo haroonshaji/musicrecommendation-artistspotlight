@@ -1,0 +1,73 @@
+    <div class="search-box">
+        <div class="search-row">
+            <input type="text" id="input-box" placeholder="Search artists" autocomplete="off">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+  </div>
+  
+
+  .search-box{
+    width: 500px;
+    background: white;
+    margin: auto;
+    border-radius: 5px;
+    color: black;
+    padding: 100px;
+}
+
+.search-row{
+  display: flex;
+  align-items: center;
+  padding:10px 20px ;
+}
+
+input #input-box{
+  flex: 1;
+  height: 50px;
+  background: 0;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+
+----------------------------------------------------------------
+<div class="col-12">
+    <div class="search-container">
+        <input type="text" class="search-input" id="search" placeholder="Search artists...">
+        <button class="search-btn" type="button" id="search-btn">Search</button>
+    </div>
+</div>
+
+
+/* CSS code for styling the search bar */
+.search-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 10px auto;
+}
+
+.search-input {
+  height: 50px;
+  padding: 10px 20px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-btn {
+  height: 50px;
+  width: 120px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: #20b7bc;
+}
+
+.search-btn:hover {
+  background-color: #1e9c99;
+}
+
+style="width:500px; height:100px; background:black; padding:50px"

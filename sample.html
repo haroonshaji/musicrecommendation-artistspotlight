@@ -1,0 +1,5 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Music Recommendation System</title> <script src="recommendation.js"></script> </head> <body> <h1>Music Recommendation System</h1> <p>Enter a song name to get recommendations:</p> <input type="text" id="song_name"> <button id="recommend_button">Generate Recommendations</button> <div id="recommendations"></div> <script> // Get the button and input elements var button = document.getElementById("recommend_button"); var input = document.getElementById("song_name"); var div = document.getElementById("recommendations"); // Add event listener to the button button.addEventListener("click", function() { // Call the recommend_songs function with the input value var song_name = input.value; var recommendations = recommend_songs(song_name); // Display the recommendations in the div element div.innerHTML = "<h2>Recommended Songs:</h2><ul>"; for (var i = 0; i < recommendations.length; i++) { div.innerHTML += "<li>" + recommendations[i] + "</li>"; } div.innerHTML += "</ul>"; }); </script> </body>
+ </html> 
